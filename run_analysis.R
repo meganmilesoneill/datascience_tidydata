@@ -61,5 +61,3 @@ all.data.summary <- aggregate(. ~ subject+activity.name, data=all.data.final, me
 head(all.data.summary)
 
 write.table(all.data.summary, "tidy_data.txt", sep=",", row.names = FALSE)
-
-features
