@@ -11,7 +11,7 @@ output: html_document
 The primary goal of the exercise is to combine and summarize the train and test datasets from the "Human Activity Recognition Using Smartphones Data Set" available on the UCI Machine Learning Repository site here: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>.
 
 ## Raw Data
-### The files
+
 The data used in this exercise came in two main sets - train and test - that are broken into three separate files containing feature data, subjects, and labels for a total of 6 files: 
 
 * X_train.txt - training feature data  
@@ -27,6 +27,16 @@ Two additional files were used to process the data:
 
 * activity_labels.txt - contains the mapping between the activity code and the activity name  
 * features.txt - a list of all the features in the X_train.txt and X_test.txt datasets.  This list also corresponds to the column names in the X_train.txt and X_test.txt files.
+
+Feature data:  
+
+* Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+* The acceleration signal from the smartphone accelerometer X,Y, and Z axes are in standard gravity units 'g'.
+* BodyAcc - The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+* BodyGyro - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+* Features are normalized and bounded within [-1,1].
+* Each feature vector is a row on the text file.
+
 
 ## Codebook
 * X_train.txt, y_train.txt, subject_train.txt, X_test.txt, y_test.txt, and subject_test.txt were all combined into a single dataframe.
